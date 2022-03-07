@@ -1,0 +1,75 @@
+.section-1 {
+    position: relative;
+    height: 100vh;
+    padding: 54px 24px 110px 16px;
+
+    background-image: url("../../assets/images/sc-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    .back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(90deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
+        opacity: 0.85;
+        height: 100%;
+        width: 100%;
+    }
+
+    header {
+        position: relative;
+        z-index: 8;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 66px;
+
+        .menu_icon {
+            cursor: pointer;
+        }
+    }
+    main {
+        position: relative;
+        z-index: 9;
+
+        .logo_anhor {
+            margin-left: 15px;
+            margin-bottom: 88px;
+        }
+
+        b {
+            display: block;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 56px;
+            color: #FDC802;
+            margin-bottom: 24px;
+        }
+
+        p {
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 21px;
+
+            color: #FFFFFF;
+            margin-bottom: 88px;
+        }
+
+        button {
+            cursor: pointer;
+            padding: 19px 36px 19px 35px;
+            background: #FDC802;
+            border-radius: 50px;
+            border: none;
+
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+
+            color: #FFFFFF;
+
+        }
+    }
+}

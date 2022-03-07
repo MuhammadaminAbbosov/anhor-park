@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+.section-1 {
+  position: relative;
+  height: 100vh;
+  padding: 54px 24px 110px 16px;
+  background-image: url("../../assets/images/sc-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.section-1 .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#3D4E81), color-stop(48%, #5753C9), to(#6E7FF3));
+  background: linear-gradient(90deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
+  opacity: 0.85;
+  height: 100%;
+  width: 100%;
+}
+
+.section-1 header {
+  position: relative;
+  z-index: 8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 66px;
+}
+
+.section-1 header .menu_icon {
+  cursor: pointer;
+}
+
+.section-1 main {
+  position: relative;
+  z-index: 9;
+}
+
+.section-1 main .logo_anhor {
+  margin-left: 15px;
+  margin-bottom: 88px;
+}
+
+.section-1 main b {
+  display: block;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  color: #FDC802;
+  margin-bottom: 24px;
+}
+
+.section-1 main p {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  margin-bottom: 88px;
+}
+
+.section-1 main button {
+  cursor: pointer;
+  padding: 19px 36px 19px 35px;
+  background: #FDC802;
+  border-radius: 50px;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */
