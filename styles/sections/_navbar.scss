@@ -1,0 +1,40 @@
+.navigation-bar {
+    position: absolute;
+    z-index: 9999;
+    right: 15px;
+    top: 45px;
+    background: #FFFFFF;
+    width: 262px;
+    border-radius: 20px;
+    transition: 1.5s;
+    transform: translateX(300px);
+
+    display: none;
+    @media (max-width: 992px) {
+        display: block;
+    }
+
+    &.show {
+        transform: translateX(0) !important;
+    }
+
+    nav {
+        padding: 26px 32px 64px 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        a {
+            display: block;
+            font-size: 18px;
+            line-height: 21px;
+            color: #000000;
+            transition: 0.4s;
+
+            &:hover , &:active {
+                color: #FDC802;
+                transform: scale(1.01);
+                margin-left: 10px;
+            }
+        }
+    }
+}

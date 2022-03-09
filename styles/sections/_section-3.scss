@@ -1,0 +1,93 @@
+.section-3 {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    padding: 98px 16px 0 16px;
+    background-image: url("../../assets/images/sc-3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(90deg, #CC208E 0%, #6713D2 100%);
+        opacity: 0.9;
+    }
+
+    main {
+        position: relative;
+        z-index: 99;
+
+        .text {
+            font-weight: normal;
+            
+            margin-bottom: 64px;
+
+            font-size: 24px;
+            line-height: 28px;
+            color: #FFFFFF;
+
+            text-align: center;
+
+            @media (max-width: 992px) {
+                text-align: left;
+                font-size: 18px;
+            }
+        }
+
+        .cards {
+            display: grid;
+            align-items: flex-start;
+            grid-template-columns: repeat(4, 1fr);
+
+            @media (max-width: 1202px) {
+                grid-template-columns: repeat(3, 1fr)
+            }
+            @media (max-width: 992px) {
+                grid-template-columns: repeat(2, 1fr)
+            }
+            @media (max-width: 776px) {
+                grid-template-columns: 1fr;
+            }
+            .card {
+                margin-left: 37px;
+                position: relative;
+                width: 284px;
+
+                margin-bottom: 98px;
+
+                &:hover, &:active , &:focus{
+                    filter: drop-shadow(0px 0px 20px #FFFFFF);
+                }
+
+                &.active {
+                    filter: drop-shadow(0px 0px 20px #FFFFFF);
+                }
+                button {
+                    display: block;
+                    width: 100%;
+
+                    border: none;
+                    border-radius: 20px;
+                    background-color: #FDC802;
+
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    padding: 23px 75px;
+
+                    font-weight: normal;
+                    font-size: 24px;
+                    line-height: 28px;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+                
+            }
+        }
+    }
+}

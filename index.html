@@ -4,39 +4,189 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="./styles/main.css">
-    <script src="./js/index.js" defer></script>
-    <title>Document</title>
+    <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <link rel="shortcut icon" href="./assets/icons/logo.png" type="image/x-icon">
+    
+    <script src="./js/main/variables.js" defer></script>
+    <script src="./js/main/index.js" defer></script>
+
+    <title>Anhor Park</title>
 </head>
 <body>
-    <section class="section-1">
+    <section class="section-1" id="main">
         <div class="back"></div>
         <header>
             <img  class="menu_icon" id="menu_icon" src="./assets/icons/menu.svg" alt="">
+            <div class="nav">
+                <a href="./index.html">
+                    <img src="./assets/icons/logo_anhor.png" class="logo_anhor" alt="logo_anhor">
+                </a>
+                <a href="#main">Главная</a>
+                <a href="#aboutus">О Нас</a>
+                <a href="#entertainment">Развлечения</a>
+                <a href="#adress">Адрес</a>
+                <a href="#footer">Контакты</a>
+            </div>
+            <div class="navigation-bar">
+                <img src="./assets/icons/nav_logo.png" alt="">
+                <nav>
+                    <a href="#main">Главная</a>
+                    <a href="#aboutus">О Нас</a>
+                    <a href="#entertainment">Развлечения</a>
+                    <a href="#adress">Адрес</a>
+                    <a href="#footer">Контакты</a>
+                </nav>
+            </div>
         </header>
         <main>
-            <img src="./assets/icons/logo_anhor.png" class="logo_anhor" alt="logo_anhor">
+            <a href="./index.html">
+                <img src="./assets/icons/logo_anhor.png" class="logo_anhor" alt="logo_anhor">
+            </a>
             <b>Anhor Park</b>
-            <p>Место самых ярких эмоций для <br>
+            <p>Место самых ярких эмоций для 
                 всей вашей семьи!</p>
-            <button class="btn">Подробнее</button>
+            <a href="./anhorinfo.html" class="btn">Подробнее</a>
         </main>
     </section>
     
-    <section class="section-2">
+    <section class="section-2" id="aboutus">
         <div class="back"></div>
         <main>
-            <b>О Нас</b>
+            <b class="title">О Нас</b>
 
             <p>
-                Парк Anhor - это комплекс <br> захватывающих аттракционов для всей <br> семьи <br><br>
-                Вы сможете посетить аттракционы, <br> рассчитанные как на детей, так и на <br> взрослых, представления магов, <br> танцевальных коллективов и многое <br> другое<br><br>
-                Проведи незабываемый день в нашем <br> парке и получи потрясающие <br> впечатления!
+                Парк Anhor - это комплекс захватывающих аттракционов для всей семьи <br><br>
+                Вы сможете посетить аттракционы,  рассчитанные как на детей, так и на  взрослых, представления магов,  танцевальных коллективов и многое  другое<br><br>
+                Проведи незабываемый день в нашем  парке и получи потрясающие <br> впечатления!
             </p>
             
-            <button class="btn">Подробнее</button>
+            <a href="./aboutus.html" class="btn">Подробнее</a>
         </main>
-        
     </section>
+
+    <section class="section-3" id="entertainment">
+        <div class="back"></div>
+
+        <main>
+            <b class="title">Развлечения</b>
+            <p class="text">Выбор развлечений в парке  огромен. Здесь каждый найдёт  аттракцион себе по душе.</p>
+
+            <div class="cards">
+                
+                <div class="card">
+                    <a href="./carousel.html">
+                        <img src="./assets/images/card-1.png" alt="img">
+                        <button>Аттракцион</button>
+                    </a>
+                </div> 
+                <div class="card" id="carting">
+                    <img src="./assets/images/card-2.png" alt="img">
+                    <button>Картинг</button>
+                </div> 
+
+                <section class="carting">
+                    <b class="title">Картинг в <br> Анхор</b>
+                    <p>
+                        Самым главным отличием парка Анхор Локомотив по праву считается картинг-центр «AXELON». Здесь расположена самая масштабная зона картинга на территории СНГ. По площади она занимает больше 12 тысячи квадратных метров, а длина уникальной гоночной трассы составляет 540 метров. <br><br>
+
+                        В автопарке можно найти как машины для начинающих, так и профессиональные картинги, детские машины и учебные модели. На сдвоенных машинах можно прокатиться с ребёнком или с инструктором, если вы впервые решили попробовать свои силы. Если же вы опытный водитель, вы можете принять участие в одном из состязаний, которые проводит клуб «AXELON».
+                        
+                    </p>
+                    
+                </section>
+
+                <div class="card" id="cinema">
+                    <img src="./assets/images/card-3.png" alt="img">
+                    <button>Кинотеатр</button>
+                </div> 
+                <section class="cinema">
+                    <b class="title">Drive Cinema</b>
+                    <p>В Анхор парке имеется также <br> кинотеатр, где вы сможете <br> посмотреть кино и насладиться <br> всей семьёй</p>
+                    <p>Кинотеатр включает в себя 4 зала, <br> два из них по 75 посадочных <br> мест, два - по 70.</p>
+                </section>
+
+
+                <div class="card" id="foodcord">
+                    <img src="./assets/images/card-4.png" id="" alt="img">
+                    <button>Фудкорд</button>
+                </div> 
+                 
+            </div>
+        </main>
+    </section>
+
+    <!-- Фудкорд -->
+    <section class="section-4" >
+        <b class="title">Фудкорд</b>
+        <div class="info-sec">
+            <p>В Анхор парке вы никогда не  останетесь голодным!</p>
+            <p>Здесь же уютные кафе, где вы  сможете насладиться фастфудом.</p>
+        </div>
+
+        <div class="company-logos">
+            <img src="./assets/icons/company-logo/feedUp-logo.png" alt="feedUp">
+            <img src="./assets/icons/company-logo/lstr77-log.png" alt="lstr77">
+            <img src="./assets/icons/company-logo/Bellissimo_Pizza-logo.png" alt="Bellissimo_Pizza">
+            <img src="./assets/icons/company-logo/wok-logo.png" alt="wok">
+            <img src="./assets/icons/company-logo/lesailes-logo.png" alt="lesailes">
+            <img src="./assets/icons/company-logo/fish_and_bread-logo.png" alt="fish_and_bread">
+            <img src="./assets/icons/company-logo/dolce-logo.png" alt="dolce">
+            <img src="./assets/icons/company-logo/stock-vector-pizza-delicious-food-logo.png" alt="stock-vector-pizza-delicious-food">
+            <img src="./assets/icons/company-logo/efendi-logo.png" alt="efendi">
+            <img src="./assets/icons/company-logo/pizza_more-logo.png" alt="pizza_more">
+        </div>
+    </section>
+
+    <section class="section-5" id="adress">
+        <div class="back"></div>
+        <main>
+            <b class="title">Адрес</b> 
+            <p>Узбекистан, 100128 
+                Шайхантахурский район, ул. Лабзак,<br> 12/1, Ташкент</p>
+        </main>
+        <div id ="map" class="map"> 
+            <iframe class="google_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.110636456087!2d69.26617531510391!3d41.32820750762529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xae9611ee4d4e8300!2sAnhor%20Park!5e0!3m2!1sru!2s!4v1646643480546!5m2!1sru!2s" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+    </section>
+
+    <footer id="footer">
+
+        <div class="back"></div>
+        <main>
+            <b class="title">Режим работы</b>
+            <p>С 10:00 до 23:00 Без выходных</p>
+            <a href="tel:" class="tel">+998 78 150 83 83</a>
+            
+            <img src="./assets/icons/logo_anhor.png" class="logo_anhor" alt="logo_anhor">
+            
+            <nav>
+                <a href="#main">Главная</a>
+                <a href="#aboutus">О Нас</a>
+                <a href="#entertainment">Развлечения</a>
+                <a href="#adress">Адрес</a>
+                <a href="#footer">Контакты</a>
+            </nav>
+
+            <div class="social-media">
+                <a href="#">
+                    <img src="./assets/icons/akar-icons_instagram-fill.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./assets/icons/iconoir_facebook.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./assets/icons/ph_telegram-logo.svg" alt="">
+                </a>
+                <a href="#">
+                    <img src="./assets/icons/ph_youtube-logo.svg" alt="">
+                </a>
+
+            </div>
+        </main>
+    </footer>
+
 </body>
 </html>

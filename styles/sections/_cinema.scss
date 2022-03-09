@@ -1,0 +1,63 @@
+.cinema {
+    display: none;
+    animation-name: animation;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    p {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        
+        margin-bottom: 24px;
+        color: #FFFFFF;
+        &:last-child {
+            margin-bottom: 64px;
+        }        
+    }
+
+    &.show {
+        display: block !important;
+    }
+
+    @keyframes animation {
+        0% {
+            transform: translateX(-300px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+}
+
+.carting {
+    display: none;
+    animation-name: animation;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    
+    p {
+        font-size: 18px;
+        line-height: 21px;
+
+        color: #FFFFFF;
+        margin-bottom: 64px;
+        margin-right: 16px
+    }
+
+    &.show {
+        display: block;
+    }
+
+    @keyframes animation {
+        0% {
+            transform: translateX(-300px);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+}

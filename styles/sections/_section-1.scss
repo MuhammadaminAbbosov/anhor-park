@@ -1,12 +1,21 @@
 .section-1 {
     position: relative;
+    scroll-behavior: smooth;
     height: 100vh;
-    padding: 54px 24px 110px 16px;
+    padding: 54px 100px 110px 40px;
+
+    @media (max-width: 1200px) {
+        padding: 54px 80px  110px 30px;
+    }
+    @media (max-width: 768px) {
+        padding: 54px 24px 110px 16px;
+    }
 
     background-image: url("../../assets/images/sc-1.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    overflow-x: hidden;
     
     .back {
         position: absolute;
@@ -19,15 +28,64 @@
     }
 
     header {
-        position: relative;
-        z-index: 8;
+        // position: relative;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
         margin-bottom: 66px;
+        overflow-x: hidden;
+        @media (max-width: 992px) {
+            justify-content: flex-end;
+        }
+
+        .nav {
+            position: relative;
+            z-index: 55;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+
+            @media (max-width: 1342px) {
+                gap: 30px;
+            }
+            @media (max-width: 1225px) {
+                gap: 20px;
+            }
+            a {
+
+                font-size: 24px;
+                font-weight: bold;
+                color: #FFFFFF;
+                transition: 0.4s;
+                padding: 0 10px;
+                @media (max-width: 1200px) {
+                    font-size: 18px !important;
+                }
+
+                &:not(:first-child) {
+                    &:hover {
+                        // transform: scale(1.1);
+                        color: #FDC802;
+                        box-shadow: 0px 0px 40px #FDC802;
+                    }
+                }
+
+            }
+
+            @media (max-width: 992px) {
+                display: none !important;
+            }
+        }
 
         .menu_icon {
+            display: none;
+            position: relative;
+            z-index: 999999999;
             cursor: pointer;
+
+            @media (max-width: 992px) {
+                display: block;
+            }
         }
     }
     main {
@@ -37,6 +95,12 @@
         .logo_anhor {
             margin-left: 15px;
             margin-bottom: 88px;
+
+            display: none;
+
+            @media (max-width: 992px) {
+                display: block;
+            }
         }
 
         b {
@@ -46,15 +110,24 @@
             line-height: 56px;
             color: #FDC802;
             margin-bottom: 24px;
+
+            text-align: center;
         }
 
         p {
             font-weight: normal;
-            font-size: 18px;
-            line-height: 21px;
+            font-size: 24px;
+            line-height: 28px;
 
             color: #FFFFFF;
             margin-bottom: 88px;
+
+            text-align: center;
+
+            @media (max-width: 992px) {
+                text-align: left;
+                font-size: 18px;
+            }
         }
 
         

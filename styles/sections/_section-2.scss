@@ -1,7 +1,11 @@
 .section-2 {
     position: relative;
-    padding: 98px 16px 131px 16px;
-    height: 100vh;
+    padding: 98px 100px 131px 40px;
+
+    @media (max-width: 992px) {
+        padding: 98px 16px 131px 16px;
+    }
+    max-height: 100vh;
 
     background-image: url("../../assets/images/sc-2.png");
     background-repeat: no-repeat;
@@ -22,25 +26,28 @@
         position: relative;
         z-index: 99;
 
-        b {
-            text-align: right;
-            display: block;
-            font-weight: bold;
-            font-size: 48px;
-            line-height: 56px;
-            
-            color: #FDC802;
-            margin-bottom: 24px;
+        .title {
+            text-align: center;
+
+            @media (max-width: 968px) {
+                text-align: right;
+            }
         }
 
         p {
-            font-weight: normal;
-            font-size: 18px;
-            line-height: 21px;
+            margin-bottom: 88px;
             
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 28px;
             color: #FFFFFF;
 
-            margin-bottom: 88px;
+            text-align: center;
+
+            @media (max-width: 992px) {
+                text-align: left;
+                font-size: 18px;
+            }
         }
     }
 }
